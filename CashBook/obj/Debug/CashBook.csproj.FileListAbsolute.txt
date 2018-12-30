@@ -1,1 +1,0 @@
-F:\Visual Studio 2013\VSProjects\WindowsForm\CashBook\CashBook\bin\Debug\CashBook.exe.config
