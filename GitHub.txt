@@ -1,0 +1,21 @@
+1、安装Git
+2、绑定GitHub用户
+	$ git condif -global user.name="AleyStone"
+	$ git condif -global user.eamil="wl94011@163.com"
+3、为GitHub账户设置SSH key
+	$ ssh-keygen -t rsa -C "wl94011@163.com"	# create SSH key
+	登录GitHub账号配置ssh key(设置-SSH keys-添加SSH keys<key是生成的公共密钥>)
+4、上传本地项目至GitHub
+(1)创建本地项目
+(2)建立本地仓库
+	$ echo "# CashBook" >> README.md
+	$ git init	# 初始化仓库
+	$ git add README.md	# 添加本地文件到缓存区
+	$ git add .	# 添加本地所有更新的文件至缓存区
+	$ git commit -m "first commit"	# 把本地文件提交到远程仓库
+	$ git remote add origin https://github.com/aleystone/CashBook.git	# 关联远程仓库
+	$ git push -u origin master	# 把本地库文件全部推送到远程仓库
+5、下载GitHub远程项目
+	$ git clone URL	# URL链接
+6、删除远程仓库文件
+	$ git status	# 查看状态
